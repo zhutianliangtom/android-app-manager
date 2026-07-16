@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppGuard</string>
+    <string name="home_title">今日概览</string>
+    <string name="apps_title">App管理</string>
+    <string name="settings_title">设置</string>
+    <string name="points_label">我的积分</string>
+    <string name="unlock_button">解除限制 (-20分)</string>
+    <string name="no_apps_limited">暂无限制的App</string>
+    <string name="accessibility_guide">请前往设置开启无障碍服务</string>
+</resources>

@@ -347,10 +347,11 @@ function finishBidding(room) {
 
 function sendTurnRequest(room) {
   const player = room.players[room.currentTurn];
+  const canPass = room.lastPlayed !== null && room.lastPlayedBy !== player.playerIndex;
   io.to(player.socketId).emit('your_turn', {
     lastPlayed: room.lastPlayed,
     lastPlayedBy: room.lastPlayedBy,
-    canPass: room.lastPlayed !== null
+    canPass: canPass
   });
 
   broadcastToRoom(room, 'turn_change', {
